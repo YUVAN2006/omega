@@ -1,6 +1,6 @@
 import type { WSMessage } from '@/types'
 
-const WS_URL = (import.meta.env.VITE_WS_URL || 'ws://localhost:8000') + '/voice/ws'
+const WS_URL = (import.meta.env.VITE_WS_URL || 'wss://confident-determination-production-8ae6.up.railway.app') + '/voice/ws'
 
 type MessageHandler = (msg: WSMessage) => void
 type StatusHandler = (connected: boolean) => void
